@@ -91,7 +91,7 @@ backup:
   message: backup my blog of https://wudalei.github.io/
   repository:
     # github: https://github.com/honjun/honjun.github.io.git,backup
-    coding: https://github.com/wudalei/myBlog.git,backup
+    coding: https://github.com/wudalei/myBlog.git,master
 
 #RSS
 feed:

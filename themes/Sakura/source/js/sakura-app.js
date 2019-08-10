@@ -38,7 +38,7 @@ mashiro_global.ini = new function () {
         setTimeout(function () {
           mashiro_option.app_update(true)
         }, 10000)
-      } catch (e) {}
+      } catch (e) { }
     }
     if ($('div').hasClass('poem-wrap')) {
       get_poem('#poem', '#info')
@@ -252,7 +252,7 @@ function code_highlight_style () {
       'autocapitalize': 'off',
       'spellcheck': 'false',
       'contenteditable': 'false',
-      'design': 'by hojun'
+      'design': 'by zhupi'
     }
     var ele_name = $('pre:eq(' + i + ')')[0].children[0].className
     var lang = ele_name.substr(0, ele_name.indexOf(' ')).replace('language-', '')
@@ -281,7 +281,7 @@ function code_highlight_style () {
 }
 try {
   code_highlight_style()
-} catch (e) {}
+} catch (e) { }
 
 function copy_code_block () {
   $('pre code').each(function (i, block) {
@@ -448,7 +448,7 @@ function checkBgImgCookie () {
       $('.blank').css('background-color', 'rgba(255,255,255,1)')
       $('.pattern-center').removeClass('pattern-center').addClass('pattern-center-sakura')
       $('.headertop-bar').removeClass('headertop-bar').addClass('headertop-bar-sakura')
-    } else {}
+    } else { }
   } else {
     return false
   }
@@ -668,17 +668,17 @@ var pjaxInit = function () {
   $('p').remove('.head-copyright')
   try {
     code_highlight_style()
-  } catch (e) {};
+  } catch (e) { };
   try {
     inlojv_js_getqqinfo()
-  } catch (e) {};
+  } catch (e) { };
   lazyload()
-    // if ($("div").hasClass("popcontainer")) {
-    //     loadBotui();
-    // }
+  // if ($("div").hasClass("popcontainer")) {
+  //     loadBotui();
+  // }
   try {
     reload_show_date_time()
-  } catch (e) {}
+  } catch (e) { }
   if (mashiro_global.variables.skinSecter === true) {
     $('.pattern-center').removeClass('pattern-center').addClass('pattern-center-sakura')
     $('.headertop-bar').removeClass('headertop-bar').addClass('headertop-bar-sakura')
@@ -742,7 +742,7 @@ function show_date_time () {
 }
 try {
   show_date_time()
-} catch (e) {}
+} catch (e) { }
 POWERMODE.colorful = true
 POWERMODE.shake = false
 document.body.addEventListener('input', POWERMODE)
@@ -1050,27 +1050,27 @@ var home = location.href,
       if ($('.toc').length > 0 && document.body.clientWidth > 1200) {
         if ($(".pattern-center").length > 0) { //有图的情况
           tocbot.init({
-              // Where to render the table of contents.
-              tocSelector: '.toc', // 放置目录的容器
-              // Where to grab the headings to build the table of contents.
-              contentSelector: '.entry-content', // 正文内容所在
-              // Which headings to grab inside of the contentSelector element.
-              scrollSmooth: true,
-              headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-              headingsOffset: -400,
-              scrollSmoothOffset: -85
+            // Where to render the table of contents.
+            tocSelector: '.toc', // 放置目录的容器
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.entry-content', // 正文内容所在
+            // Which headings to grab inside of the contentSelector element.
+            scrollSmooth: true,
+            headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+            headingsOffset: -400,
+            scrollSmoothOffset: -85
           });
         } else {
           tocbot.init({
-              // Where to render the table of contents.
-              tocSelector: '.toc', // 放置目录的容器
-              // Where to grab the headings to build the table of contents.
-              contentSelector: '.entry-content', // 正文内容所在
-              // Which headings to grab inside of the contentSelector element.
-              scrollSmooth: true,
-              headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-              headingsOffset: -85,
-              scrollSmoothOffset: -85
+            // Where to render the table of contents.
+            tocSelector: '.toc', // 放置目录的容器
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.entry-content', // 正文内容所在
+            // Which headings to grab inside of the contentSelector element.
+            scrollSmooth: true,
+            headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+            headingsOffset: -85,
+            scrollSmoothOffset: -85
           });
         }
         var offsetTop = $('.toc').offset().top - 135
@@ -1109,7 +1109,7 @@ var home = location.href,
     MJ: function () {
       if (mashiro_option.mathjax == '1') {
         $.getScript('//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML', function () {
-          MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}})
+          MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'], ['\\(', '\\)']] } })
           var math = document.getElementsByClassName('entry-content')[0]
           MathJax.Hub.Queue(['Typeset', MathJax.Hub, math])
         })
@@ -1142,14 +1142,14 @@ var home = location.href,
       })
       $('#banner_wave_1').addClass('banner_wave_hide')
       $('#banner_wave_2').addClass('banner_wave_hide')
-            // for (var i = 0; i < ap.length; i++) {
-            //     try {
-            //         ap[i].destroy()
-            //     } catch (e) {}
-            // }
-            // try {
-            //     hermitInit()
-            // } catch (e) {}
+      // for (var i = 0; i < ap.length; i++) {
+      //     try {
+      //         ap[i].destroy()
+      //     } catch (e) {}
+      // }
+      // try {
+      //     hermitInit()
+      // } catch (e) {}
       s.play()
     }, spause: function () {
       $('#video-btn').addClass('video-play').removeClass('video-pause')
@@ -1359,29 +1359,29 @@ var home = location.href,
             t.createButterbar(request.responseText)
           }, success: function (data) {
             jQuery('textarea').each(function () {
-                this.value = ''
-              })
+              this.value = ''
+            })
             var t = addComment,
-                cancel = t.I('cancel-comment-reply-link'),
-                temp = t.I('wp-temp-form-div'),
-                respond = t.I(t.respondId),
-                post = t.I('comment_post_ID').value,
-                parent = t.I('comment_parent').value
+              cancel = t.I('cancel-comment-reply-link'),
+              temp = t.I('wp-temp-form-div'),
+              respond = t.I(t.respondId),
+              post = t.I('comment_post_ID').value,
+              parent = t.I('comment_parent').value
             if (parent != '0') {
-                jQuery('#respond').before('<ol class="children">' + data + '</ol>')
-              } else if (!jQuery('.' + __list).length) {
-                  if (Poi.formpostion == 'bottom') {
-                    jQuery('#respond').before('<ol class="' + __list + '">' + data + '</ol>')
-                  } else {
-                    jQuery('#respond').after('<ol class="' + __list + '">' + data + '</ol>')
-                  }
-                } else {
-                  if (Poi.order == 'asc') {
-                    jQuery('.' + __list).append(data)
-                  } else {
-                    jQuery('.' + __list).prepend(data)
-                  }
-                }
+              jQuery('#respond').before('<ol class="children">' + data + '</ol>')
+            } else if (!jQuery('.' + __list).length) {
+              if (Poi.formpostion == 'bottom') {
+                jQuery('#respond').before('<ol class="' + __list + '">' + data + '</ol>')
+              } else {
+                jQuery('#respond').after('<ol class="' + __list + '">' + data + '</ol>')
+              }
+            } else {
+              if (Poi.order == 'asc') {
+                jQuery('.' + __list).append(data)
+              } else {
+                jQuery('.' + __list).prepend(data)
+              }
+            }
             t.createButterbar('提交成功(Succeed)')
             lazyload()
             code_highlight_style()
@@ -1391,9 +1391,9 @@ var home = location.href,
             cancel.onclick = null
             t.I('comment_parent').value = '0'
             if (temp && respond) {
-                temp.parentNode.insertBefore(respond, temp)
-                temp.parentNode.removeChild(temp)
-              }
+              temp.parentNode.insertBefore(respond, temp)
+              temp.parentNode.removeChild(temp)
+            }
           }
         })
         return false
@@ -1413,7 +1413,7 @@ var home = location.href,
             div.id = 'wp-temp-form-div'
             div.style.display = 'none'
             respond.parentNode.insertBefore(div, respond)
-          }!comm ? (temp = t.I('wp-temp-form-div'), t.I('comment_parent').value = '0', temp.parentNode.insertBefore(respond, temp), temp.parentNode.removeChild(temp)) : comm.parentNode.insertBefore(respond, comm.nextSibling)
+          } !comm ? (temp = t.I('wp-temp-form-div'), t.I('comment_parent').value = '0', temp.parentNode.insertBefore(respond, temp), temp.parentNode.removeChild(temp)) : comm.parentNode.insertBefore(respond, comm.nextSibling)
           jQuery('body').animate({
             scrollTop: jQuery('#respond').offset().top - 180
           }, 400)
@@ -1434,24 +1434,24 @@ var home = location.href,
           }
           try {
             t.I('comment').focus()
-          } catch (e) {}
+          } catch (e) { }
           return false
         }, I: function (e) {
           return document.getElementById(e)
         }, clearButterbar: function (e) {
           if (jQuery('.butterBar').length > 0) {
-              jQuery('.butterBar').remove()
-            }
-        }, createButterbar: function (message, showtime) {
-            var t = this
-            t.clearButterbar()
-            jQuery('body').append('<div class="butterBar butterBar--center"><p class="butterBar-message">' + message + '</p></div>')
-            if (showtime > 0) {
-                setTimeout("jQuery('.butterBar').remove()", showtime)
-              } else {
-                setTimeout("jQuery('.butterBar').remove()", 6000)
-              }
+            jQuery('.butterBar').remove()
           }
+        }, createButterbar: function (message, showtime) {
+          var t = this
+          t.clearButterbar()
+          jQuery('body').append('<div class="butterBar butterBar--center"><p class="butterBar-message">' + message + '</p></div>')
+          if (showtime > 0) {
+            setTimeout("jQuery('.butterBar').remove()", showtime)
+          } else {
+            setTimeout("jQuery('.butterBar').remove()", 6000)
+          }
+        }
       }
     }, XCP: function () {
       $body = (window.opera) ? (document.compatMode == 'CSS1Compat' ? $('html') : $('body')) : $('html,body')
@@ -1465,8 +1465,8 @@ var home = location.href,
             $('ul.commentwrap').remove()
             $('#loading-comments').slideDown()
             $body.animate({
-                scrollTop: $('#comments-list-title').offset().top - 65
-              }, 800)
+              scrollTop: $('#comments-list-title').offset().top - 65
+            }, 800)
           }, dataType: 'html',
           success: function (out) {
             result = $(out).find('ul.commentwrap')
@@ -1491,27 +1491,27 @@ var home = location.href,
         $back_to_top = $('.cd-top')
       $(window).scroll(function () {
         if ($(this).scrollTop() > offset) {
-            $back_to_top.addClass('cd-is-visible')
-            $('.changeSkin-gear').css('bottom', '0')
-            if ($(window).height() > 950) {
-                $('.cd-top.cd-is-visible').css('top', '0')
-              } else {
-                $('.cd-top.cd-is-visible').css('top', ($(window).height() - 950) + 'px')
-              }
+          $back_to_top.addClass('cd-is-visible')
+          $('.changeSkin-gear').css('bottom', '0')
+          if ($(window).height() > 950) {
+            $('.cd-top.cd-is-visible').css('top', '0')
           } else {
-            $('.changeSkin-gear').css('bottom', '-999px')
-            $('.cd-top.cd-is-visible').css('top', '-900px')
-            $back_to_top.removeClass('cd-is-visible cd-fade-out')
+            $('.cd-top.cd-is-visible').css('top', ($(window).height() - 950) + 'px')
           }
+        } else {
+          $('.changeSkin-gear').css('bottom', '-999px')
+          $('.cd-top.cd-is-visible').css('top', '-900px')
+          $back_to_top.removeClass('cd-is-visible cd-fade-out')
+        }
         if ($(this).scrollTop() > offset_opacity) {
-            $back_to_top.addClass('cd-fade-out')
-          }
+          $back_to_top.addClass('cd-fade-out')
+        }
       })
       $back_to_top.on('click', function (event) {
         event.preventDefault()
         $('body,html').animate({
-            scrollTop: 0
-          }, scroll_top_duration)
+          scrollTop: 0
+        }, scroll_top_duration)
       })
     }
   }
@@ -1605,9 +1605,6 @@ $(function () {
   $(document).on('click', '.specsZan', function () {
     $(this).postLike()
   })
-  console.log('%c Mashiro %c', 'background:#24272A; color:#ffffff', '', 'https://2heng.xin/')
-  console.log('%c hojun %c', 'background:#24272A; color:#ffffff', '', 'https://www.hojun.cn/')
-  console.log('%c Github %c', 'background:#24272A; color:#ffffff', '', 'https://github.com/honjun/hexo-theme-sakura')
 })
 var isWebkit = navigator.userAgent.toLowerCase().indexOf('webkit') > -1,
   isOpera = navigator.userAgent.toLowerCase().indexOf('opera') > -1,

@@ -11,7 +11,7 @@ video: 视频资源
 help: 关于本站
 links: 友情链接
 photo: 图集
-book: 悦读
+book: 书
 music: 音乐
 cloud: 资源
 prev: <i class="iconfont icon-back"></i>
@@ -42,13 +42,21 @@ insight:
 
 #category
 技术:
-    zh: 野生技术协会
-    en: Geek – Only for Love
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/coding.jpg
-生活:
-    zh: 生活
-    en: live
-    img: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/writing.jpg
+    zh: 技术怪谈协会
+    en: LOVE AND PEACE
+    img: https://cdn.jsdelivr.net/gh/wudalei/static@1.1/other/5.jpg
+小笔记:
+    zh: 不懂就学，学完就记
+    en: 好记性不如烂笔头
+    img: https://cdn.jsdelivr.net/gh/wudalei/static@1.1/other/1.jpg
+资源:
+    zh: 神秘的资源
+    en: 有空得在这模块设置一个密码校验
+    img: https://cdn.jsdelivr.net/gh/wudalei/static@1.1/other/3.jpg
+随想:
+    zh: 人间很值得
+    en: 吐槽
+    img: https://cdn.jsdelivr.net/gh/wudalei/static@1.1/other/5.jpg
 
 #tag
 悦读:

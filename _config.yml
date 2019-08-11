@@ -79,19 +79,8 @@ theme: Sakura
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: 
-    # github: git@github.com:honjun/honjun.github.io.git
-    # github: https://github.com/honjun/honjun.github.io.git
-    coding: https://github.com/wudalei/myBlog.git
+  repository: git@github.com:wudalei/wudalei.github.io.git
   branch: master
-
-# backup
-backup:
-  type: git
-  message: backup my blog of https://wudalei.github.io/
-  repository:
-    # github: https://github.com/honjun/honjun.github.io.git,backup
-    coding: https://github.com/wudalei/myBlog.git,master
 
 #RSS
 feed:

@@ -2,7 +2,7 @@
 title: 常用的hexo命令
 author: 猪皮
 date: 2019-08-04 19:08:18
-avatar: https://cdn.jsdelivr.net/gh/wudalei/hexo@1.3/themes/Sakura/source/images/cover/avator.jpg
+avatar: https://cdn.jsdelivr.net/gh/wudalei/static@1.1/avatar/avator.jpg
 authorLink: 
 authorAbout: 一个兴趣使然的猿
 authorDesc: 一个兴趣使然的猿
@@ -10,7 +10,7 @@ categories: 技术
 comments: true
 keywords: Sakura
 description: 总结一些常用的hexo命令
-photos: https://cdn.jsdelivr.net/gh/wudalei/hexo@1.3/themes/Sakura/source/images/cover/p1.jpg
+photos: https://cdn.jsdelivr.net/gh/wudalei/static@1.1/image/13.jpg
 ---
 
 ## 前言

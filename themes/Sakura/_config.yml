@@ -6,7 +6,7 @@ favicon: /images/favicon.ico
 avatar: /avatar/2.jpg
 url: https://wudalei.github.io
 description: 欢迎你来到这个神秘的博客，嘿嘿嘿!
-cdn: https://cdn.jsdelivr.net/gh/wudalei/static@1.1
+cdn: https://cdn.jsdelivr.net/gh/wudalei/static@1.3
 pjax: 1
 # 1开启
 mathjax: 0
@@ -22,7 +22,7 @@ menus:
     随想: {path: /categories/随想/, fa: fa-commenting-o },
     # 转载: {path: /categories/转载/, fa: fa-book }
   } }
-  个人喜好: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
+  宅power!: { path: javascript:;, fa: fa-thumbs-up faa-vertical, submenus: { 
     图: {path: /imgs/, fa: fa-photo },
     书: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
     番: {path: /bangumi/, fa: fa-film faa-vertical }, 

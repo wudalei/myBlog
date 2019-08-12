@@ -1,0 +1,31 @@
+.grid {
+  position: relative;
+  /* fluffy */
+  margin: 0 auto;
+  width: 98%;
+  /* end fluffy */
+}
+
+.grid-item {
+  position: absolute;
+  /* fluffy */
+  opacity: 1;
+  box-shadow: 1px 1px #9E9E9E;
+  border-radius: 3px;
+  /* end fluffy */
+}
+.grid-item img{
+  max-width: 400px;
+}
+/* mq */
+
+.site-header{
+  background-color: white!important;
+}
+
+@media (max-width: 600px) {
+  .grid-item {
+    width: 120px;
+    height: 80px;
+  }
+}

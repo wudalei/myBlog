@@ -24,4 +24,5 @@ photos: https://cdn.jsdelivr.net/gh/wudalei/static@1.1/image/13.jpg
   - $ hexo c     **<br>清除public文件夹**
   + $ hexo p     **<br>重设端口号，默认访问http://localhost:4000/**
   - $ hexo d     **<br>部署和上传**
+  + $ hexo s     **<br>启动项目**
 
